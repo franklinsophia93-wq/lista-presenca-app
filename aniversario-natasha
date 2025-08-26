@@ -1,5 +1,0 @@
-git init
-git add .
-git commit -m "Aplicação de confirmação de presença"
-git remote add origin <https://aniversario-natasha.onrender.com>
-git push origin main
