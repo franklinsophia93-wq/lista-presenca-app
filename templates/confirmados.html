@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmados - Aniversário da Natasha</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        table { margin: 20px auto; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #ff9900; color: white; }
+    </style>
+</head>
+<body>
+    <h1>Lista de Confirmados - Aniversário da Natasha</h1>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Presença</th>
+            <th>Acompanhante</th>
+        </tr>
+        {% for confirmacao in confirmacoes %}
+        <tr>
+            <td>{{ confirmacao[0] }}</td>
+            <td>{{ confirmacao[1] }}</td>
+            <td>{{ confirmacao[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p><a href="/">Voltar ao formulário</a></p>
+</body>
+</html>
